@@ -1,2 +1,7 @@
 node_modules
-dist 
+dist
+.env
+.yarn
+.idea
+.vscode
+*.log

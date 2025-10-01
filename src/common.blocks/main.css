@@ -1,0 +1,22 @@
+.article__header-dakstop {
+  margin-top: 40px;
+  position: relative;
+  height: 537px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 126px 68px 0 60px;
+}
+
+.article__header-dakstop::after {
+  content: '';
+  background-color: rgba(116, 211, 0, 1);
+  position: absolute;
+  left: 0;
+  top: 66px;
+  right: 0;
+  bottom: 0;
+  border-radius: 70px;
+  z-index: -1;
+
+}
