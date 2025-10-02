@@ -1,3 +1,6 @@
 :root {
   --main-font: "WixMadeforDisplay", monospace;
+  --special-font: "RockSalt", monospace;
+  --title-clamp: clamp(2rem, 1.7929rem + 0.8497vw, 2.8125rem);
+  --simple-anim: background-color 0.3s ease;
 }

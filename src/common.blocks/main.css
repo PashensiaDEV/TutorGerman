@@ -1,14 +1,14 @@
-.article__header-dakstop {
+.article__header-dekstop {
   margin-top: 40px;
   position: relative;
   height: 537px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 126px 68px 0 60px;
+  padding: 126px 68px 59px 60px;
 }
 
-.article__header-dakstop::after {
+.article__header-dekstop::after {
   content: '';
   background-color: rgba(116, 211, 0, 1);
   position: absolute;
@@ -18,5 +18,90 @@
   bottom: 0;
   border-radius: 70px;
   z-index: -1;
-
 }
+
+.article__header-image {
+  position: absolute;
+  right: 67px;
+  bottom: 0px;
+}
+
+.article__header-title {
+  font-size: var(--title-clamp);
+  font-weight: 800;
+  line-height: 120%;
+  align-self: start;
+}
+
+.article__header-span {
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.article__header-paragraphs {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr) min-content;
+  font-weight: 500;
+}
+
+.article__header-paragraph {
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.article__header-logo {
+  align-self: start;
+}
+
+.special-text {
+  font-family: var(--special-font);
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.article__header-button {
+  align-self: end;
+}
+
+.button {
+  border: 0px;
+  background-color: rgba(255, 39, 39, 1);
+  font-weight: 500;
+  padding: 9px 64px 9px 40px;
+  border-radius: 47px;
+  justify-self: start;
+  font-size: 22px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  transition: var(--simple-anim);
+  position: relative;
+}
+
+.button .icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  right: 4px;
+}
+
+.icon-style {
+  width: 27px;
+  height: 27px;
+  color: #ff2727; 
+}
+
+.button:hover {
+  background-color: rgb(162, 61, 61);
+}
+    

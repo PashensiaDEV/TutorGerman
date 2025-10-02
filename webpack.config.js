@@ -43,6 +43,19 @@ const config = {
   module: {
     rules: [
       {
+  test: /\.svg$/i,
+  include: path.resolve(__dirname, 'src/icons'),
+  use: [
+    {
+      loader: 'svg-sprite-loader',
+      options: {
+        extract: false,
+        symbolId: (filePath) => 'icon-' + path.basename(filePath, '.svg'),
+      },
+    },
+  ],
+},
+      {
         test: /\.(ts|tsx)$/i,
         use: ["babel-loader", "ts-loader"],
         exclude: ["/node_modules/"],
@@ -64,7 +77,7 @@ const config = {
         use: [stylesHandler, "css-loader", "postcss-loader"],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        test: /\.(eot|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
 

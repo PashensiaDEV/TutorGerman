@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'RockSalt';
-  src: url('../fonts/RockSalt-Regular.ttf') format('truetype');
+  font-family: "RockSalt";
+  src: url('../fonts/RockSalt-Regular.ttf') format("truetype");
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {

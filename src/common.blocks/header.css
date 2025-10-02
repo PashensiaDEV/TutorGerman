@@ -33,16 +33,17 @@
 }
 
 .header__button {
-  border: 0px;
-  background-color: rgba(255, 39, 39, 1);
-  font-weight: 500;
   padding:9.5px 18.5px;
   border-radius: 12px;
   font-size: 18px;
+  border: 0px;
+  background-color: rgba(255, 39, 39, 1);
+  font-weight: 500;
+  transition: var(--simple-anim);
 }
 
 .header__button:hover {
-  background-color: rgb(76, 7, 7);
+  background-color: rgb(162, 61, 61);
   cursor: pointer;
 }
 

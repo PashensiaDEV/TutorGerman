@@ -25,6 +25,7 @@
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
+    "svg-sprite-loader": "^6.0.11",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
@@ -43,11 +44,20 @@
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier ./src --write",
     "deploy": "gh-pages -d dist"
+    
   },
+  
+  "sideEffects": [
+    "*.css",
+    "*.scss",
+    "src/icons/*.svg"
+  ],
+  
   "dependencies": {
     "@types/lodash": "^4.14.202",
     "clsx": "^2.1.0",
     "dayjs": "^1.11.10",
     "lodash": "^4.17.21"
   }
+  
 }
