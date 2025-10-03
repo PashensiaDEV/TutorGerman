@@ -60,117 +60,237 @@
 				/>
 			</article>
 			<article class="article__about-school">
-				<h2>
-					FÖRDERUNTERRICHT & NACHHILFE
+				<h2 class="article__about-title">
+					FÖRDERUNTERRICHT<br />
+					& NACHHILFE
 					<span>IN BERLIN</span>
 				</h2>
-				<div>
-					<h3>Unterstützung bei der Sprachenentwicklung</h3>
-					<p>
-						Gezielte Sprachkurse in Deutsch, Englisch, Französisch und Spanisch
-						zur Verbesserung der sprachlichen Fähigkeiten.
-					</p>
-				</div>
-				<div>
-					<h3>Nachhilfe in Mathematik und Naturwissenschaften</h3>
-					<p>
-						Individuelle Nachhilfe in Mathematik, Physik, Chemie und Biologie
-						für alle Altersgruppen.
-					</p>
-				</div>
-				<div>
-					<h3>Matura und Universitätsaufnahmen</h3>
-					<p>
-						Intensive Vorbereitung auf die Matura, Abitur und andere
-						Aufnahmeprüfungen mit Fokus auf Prüfungsstrategien und
-						Übungseinheiten in den relevanten Fächern.
-					</p>
-				</div>
-				<div>
-					<h3>Individuelle Lerncoaching-Sitzungen</h3>
-					<p>
-						Lerncoaching zur Unterstützung bei der Entwicklung effektiver
-						Lernmethoden, Verbesserung der Konzentration und Selbstorganisation
-						sowie der Steigerung der Motivation.
-					</p>
+				<div class="grid-container-blocks">
+					<div class="article__about-block">
+						<h3>Unterstützung bei der Sprachenentwicklung</h3>
+						<p>
+							Gezielte Sprachkurse in Deutsch, Englisch, Französisch und
+							Spanisch zur Verbesserung der sprachlichen Fähigkeiten.
+						</p>
+					</div>
+					<div class="article__about-block">
+						<h3>Nachhilfe in Mathematik und Naturwissenschaften</h3>
+						<p>
+							Individuelle Nachhilfe in Mathematik, Physik, Chemie und Biologie
+							für alle Altersgruppen.
+						</p>
+					</div>
+					<div class="article__about-block">
+						<h3>Matura und Universitätsaufnahmen</h3>
+						<p>
+							Intensive Vorbereitung auf die Matura, Abitur und andere
+							Aufnahmeprüfungen mit Fokus auf Prüfungsstrategien und
+							Übungseinheiten in den relevanten Fächern.
+						</p>
+					</div>
+					<div class="article__about-block">
+						<h3>Individuelle Lerncoaching-Sitzungen</h3>
+						<p>
+							Lerncoaching zur Unterstützung bei der Entwicklung effektiver
+							Lernmethoden, Verbesserung der Konzentration und
+							Selbstorganisation sowie der Steigerung der Motivation.
+						</p>
+					</div>
 				</div>
 			</article>
 
-			<article>
-				<h2>Was bieten wir?</h2>
-				<p>
-					Unser Nachhilfeinstitut in Berlin bietet maßgeschneiderte
-					Unterstützung für Schüler und Studierende zur Vorbereitung auf Schule
-					und Universität. Wir unterrichten Fächer wie Mathematik, Physik,
-					Chemie sowie verschiedene Sprachen – sowohl persönlich vor Ort als
-					auch online – und passen uns individuell an die Anforderungen jedes
-					Einzelnen an.
-				</p>
+			<article class="article__prepositions">
+				<div class="article__prepositions-container">
+					<h2 class="article__prepositions-title">Was bieten wir?</h2>
+					<p class="article__prepositions-paragpraph">
+						Unser Nachhilfeinstitut in Berlin bietet maßgeschneiderte
+						Unterstützung für Schüler und Studierende zur Vorbereitung auf
+						Schule und Universität. Wir unterrichten Fächer wie Mathematik,
+						Physik, Chemie sowie verschiedene Sprachen – sowohl persönlich vor
+						Ort als auch online – und passen uns individuell an die
+						Anforderungen jedes Einzelnen an.
+					</p>
+				</div>
+				<ul class="article__prepositions-list">
+					<li class="article__prepositions-item">
+						<div class="article__prepositions-case">
+							<img
+								class="article__prepositions-image"
+								src="<%=require('../images/school-children+teacher.jpg')%>"
+								alt="children with teacher"
+							/>
+						</div>
+						<h3>Nachhilfe & Förderunterricht</h3>
+						<ul>
+							<li>Individueller Einzelunterricht</li>
+							<li>Wöchentlich im Abo „Smart“</li>
+							<li>Online-Unterricht im Abo „Video“</li>
+						</ul>
+						<button class="button">
+							Anmelden
+							<span class="icon">
+								<svg
+									class="icon-style"
+									width="27"
+									height="27"
+									aria-hidden="true"
+								>
+									<use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+								</svg>
+							</span>
+						</button>
+					</li>
+
+					<li class="article__prepositions-item">
+						<div class="article__prepositions-case">
+							<img
+								class="article__prepositions-image"
+								src="<%=require('../images/seating-on-table.png')%>"
+								alt="learners listening and seating on the table "
+							/>
+						</div>
+						<h3>Gruppenkurse</h3>
+						<ul>
+							<li>Kleingruppenkurse Primar, Sekundar</li>
+							<li>Mittwochnachmittag und Samstag</li>
+							<li>Mathe, Deutsch, Englisch</li>
+						</ul>
+						<button class="button">
+							Anmelden
+							<span class="icon">
+								<svg
+									class="icon-style"
+									width="27"
+									height="27"
+									aria-hidden="true"
+								>
+									<use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+								</svg>
+							</span>
+						</button>
+					</li>
+
+					<li class="article__prepositions-item">
+						<div class="article__prepositions-case">
+							<img
+								class="article__prepositions-image"
+								src="<%=require('../images/hand-up.png')%>"
+								alt="learner put his hand up"
+							/>
+						</div>
+						<h3>Mittelschulvorbereitung</h3>
+						<ul>
+							<li>Prüfungsvorbereitung Primar, Sekundar</li>
+							<li>Schulbegleitende Kurse</li>
+							<li>Ferienkurse</li>
+						</ul>
+						<button class="button">
+							Anmelden
+							<span class="icon">
+								<svg
+									class="icon-style"
+									width="27"
+									height="27"
+									aria-hidden="true"
+								>
+									<use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+								</svg>
+							</span>
+						</button>
+					</li>
+
+					<li class="article__prepositions-item">
+						<div class="article__prepositions-case">
+							<img
+								class="article__prepositions-image"
+								src="<%=require('../images/learner-writing.jpg')%>"
+								alt="learner writing"
+							/>
+						</div>
+						<h3>Ferienatelier</h3>
+						<ul>
+							<li>Gruppenkurse</li>
+							<li>Nachhilfe & Förderung</li>
+							<li>Mittelschulvorbereitung</li>
+						</ul>
+						<button class="button">
+							Anmelden
+							<span class="icon">
+								<svg
+									class="icon-style"
+									width="27"
+									height="27"
+									aria-hidden="true"
+								>
+									<use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+								</svg>
+							</span>
+						</button>
+					</li>
+
+					<li class="article__prepositions-item">
+						<div class="article__prepositions-case">
+							<img
+								class="article__prepositions-image"
+								src="<%=require('../images/teacher-alone.jpg')%>"
+								alt="teacher smiling"
+							/>
+						</div>
+						<h3>Übertritt Mittelschule</h3>
+						<ul>
+							<li>Vorbereitung Übertritt in die Mittelschule</li>
+							<li>Gymnasium, Realschule, Gesamtschule</li>
+							<li>Schulbegleitende Gruppenkurse</li>
+						</ul>
+						<button class="button">
+							Anmelden
+							<span class="icon">
+								<svg
+									class="icon-style"
+									width="27"
+									height="27"
+									aria-hidden="true"
+								>
+									<use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+								</svg>
+							</span>
+						</button>
+					</li>
+
+					<li class="article__prepositions-item">
+						<div class="article__prepositions-case">
+							<img
+								class="article__prepositions-image"
+								src="<%=require('../images/learners-smiles.png')%>"
+								alt="learners smiles"
+							/>
+						</div>
+						<h3>Abiturvorbereitung</h3>
+						<ul>
+							<li>Vorbereitung auf das Abitur</li>
+							<li>Samstagvormittag</li>
+							<li>Analysis, Vektoren, Stochastik</li>
+						</ul>
+						<button class="button">
+							Anmelden
+							<span class="icon">
+								<svg
+									class="icon-style"
+									width="27"
+									height="27"
+									aria-hidden="true"
+								>
+									<use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+								</svg>
+							</span>
+						</button>
+					</li>
+				</ul>
 			</article>
-			<article>
-				<div>
-					<img src="" alt="" />
-					<h3>Nachhilfe & Förderunterricht</h3>
-					<ul>
-						<li>Individueller Einzelunterricht</li>
-						<li>Wöchentlich im Abo „Smart“</li>
-						<li>Online-Unterricht im Abo „Video“</li>
-					</ul>
-					<button>Anmelden</button>
-				</div>
-				<div>
-					<img src="" alt="" />
-					<h3>Gruppenkurse</h3>
-					<ul>
-						<li>Kleingruppenkurse Primar, Sekundar</li>
-						<li>Mittwochnachmittag und Samstag</li>
-						<li>Mathe, Deutsch, Englisch</li>
-					</ul>
-					<button>Anmelden</button>
-				</div>
-				<div>
-					<img src="" alt="" />
-					<h3>Mittelschulvorbereitung</h3>
-					<ul>
-						<li>Prüfungsvorbereitung Primar, Sekundar</li>
-						<li>Schulbegleitende Kurse</li>
-						<li>Ferienkurse</li>
-					</ul>
-					<button>Anmelden</button>
-				</div>
-				<div>
-					<img src="" alt="" />
-					<h3>Ferienatelier</h3>
-					<ul>
-						<li>Gruppenkurse</li>
-						<li>Nachhilfe & Förderung</li>
-						<li>Mittelschulvorbereitung</li>
-					</ul>
-					<button>Anmelden</button>
-				</div>
-				<div>
-					<img src="" alt="" />
-					<h3>Übertritt Mittelschule</h3>
-					<ul>
-						<li>Vorbereitung Übertritt in die Mittelschule</li>
-						<li>Gymnasium, Realschule, Gesamtschule</li>
-						<li>Schulbegleitende Gruppenkurse</li>
-					</ul>
-					<button>Anmelden</button>
-				</div>
-				<div>
-					<img src="" alt="" />
-					<h3>Abiturvorbereitung</h3>
-					<ul>
-						<li>Vorbereitung auf das Abitur</li>
-						<li>Samstagvormittag</li>
-						<li>Analysis, Vektoren, Stochastik</li>
-					</ul>
-					<button>Anmelden</button>
-				</div>
-			</article>
-			<article>
-				<h2>Welche Themen unterrichten wir in Gruppenkursen?</h2>
+			<article class="article__subjects">
+				<h2 class="article__subjects-title">
+					Welche Themen unterrichten wir in Gruppenkursen?
+				</h2>
 				<p>
 					Unser Nachhilfebüro in Berlin organisiert Gruppenkurse für Kinder und
 					Jugendliche in den Fächern Deutsch, Französisch, Englisch und
@@ -183,7 +303,66 @@
 					strukturiert und werden zu flexiblen Zeiten angeboten, um den
 					Schulalltag optimal zu ergänzen.
 				</p>
-				<div></div>
+				<div class="article__subjects-subjects">
+					<ul class="article__subjects-list">
+						<li>
+							<div class="card">
+								<div class="photo-case photo-flag">
+									<img src="<%=require('../images/Flag_of_Germany 1.png')%>" alt="Flag of Germany" />
+								</div>
+								<span class="card-label">Deutsch</span>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<div class="photo-case photo-flag">
+									<img src="<%=require('../images/Flag_of_the_United_Kingdom_(1-2).svg 1.png')%>" alt="Flag of United Kindom" />
+								</div>
+								<span class="card-label">Englisch</span>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<div class="photo-case photo-flag">
+									<img src="<%=require('../images/Flag_of_France.svg 1.png')%>" alt="Flag of France" />
+								</div>
+								<span class="card-label">Französisch</span>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<div class="photo-case photo-subject">
+									<img src="<%=require('../images/2084541 1.png')%>" alt="Math" />
+								</div>
+								<span class="card-label">Math</span>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<div class="photo-case photo-subject">
+									<img src="<%=require('../images/2784428 1.png')%>" alt="Biology" />
+								</div>
+								<span class="card-label">Biology</span>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<div class="photo-case photo-subject">
+									<img src="<%=require('../images/3444791 1.png')%>" alt="Physik" />
+								</div>
+								<span class="card-label">Physik</span>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<div class="photo-case photo-subject">
+									<img src="<%=require('../images/1651650 1.png')%>" alt="Geografie" />
+								</div>
+								<span class="card-label">Geografie</span>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</article>
 			<article>
 				<h1>Feedback</h1>

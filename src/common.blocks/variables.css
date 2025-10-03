@@ -3,4 +3,11 @@
   --special-font: "RockSalt", monospace;
   --title-clamp: clamp(2rem, 1.7929rem + 0.8497vw, 2.8125rem);
   --simple-anim: background-color 0.3s ease;
+  --special-color-text: rgb(255, 255, 255);
+  --main-color-text: rgb(0, 0, 0);
+  --contrast-color-text: rgba(255, 39, 39, 1);
+  --padding-articles: 100px;
+  --background-color: rgba(241, 241, 241, 1);
+  --gray-color-text: rgba(96, 96, 96, 1);
+  --line-height: 140%;
 }

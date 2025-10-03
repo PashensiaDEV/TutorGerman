@@ -7,7 +7,6 @@
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400; 
-  color: white;
-  /* color: black; */
+  color: var(--main-color-text);
 }
 

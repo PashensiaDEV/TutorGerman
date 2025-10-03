@@ -40,6 +40,7 @@
   background-color: rgba(255, 39, 39, 1);
   font-weight: 500;
   transition: var(--simple-anim);
+  color: var(--special-color-text);
 }
 
 .header__button:hover {
