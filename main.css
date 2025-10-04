@@ -7,8 +7,7 @@
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400; 
-  color: white;
-  /* color: black; */
+  color: var(--main-color-text);
 }
 
 
@@ -30,6 +29,13 @@
   --special-font: "RockSalt", monospace;
   --title-clamp: clamp(2rem, 1.7929rem + 0.8497vw, 2.8125rem);
   --simple-anim: background-color 0.3s ease;
+  --special-color-text: rgb(255, 255, 255);
+  --main-color-text: rgb(0, 0, 0);
+  --contrast-color-text: rgba(255, 39, 39, 1);
+  --padding-articles: 100px;
+  --background-color: rgba(241, 241, 241, 1);
+  --gray-color-text: rgba(96, 96, 96, 1);
+  --line-height: 140%;
 }
 *,
 *::before,
@@ -113,10 +119,11 @@ a {
   background-color: rgba(255, 39, 39, 1);
   font-weight: 500;
   transition: var(--simple-anim);
+  color: var(--special-color-text);
 }
 
 .header__button:hover {
-  background-color: rgb(76, 7, 7);
+  background-color: rgb(162, 61, 61);
   cursor: pointer;
 }
 
@@ -137,6 +144,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding: 126px 68px 59px 60px;
+  margin-bottom: var(--padding-articles);
 }
 
 .article__header-dekstop::after {
@@ -162,6 +170,7 @@ a {
   font-weight: 800;
   line-height: 120%;
   align-self: start;
+  color: var(--special-color-text);
 }
 
 .article__header-span {
@@ -204,16 +213,19 @@ a {
   border-radius: 47px;
   justify-self: start;
   font-size: 22px;
-  line-height: 140%;
+  line-height: var(--line-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   cursor: pointer;
   transition: var(--simple-anim);
+  position: relative;
+  color: var(--special-color-text);
 }
 
 .button .icon {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,6 +233,7 @@ a {
   border-radius: 50%;
   width: 39px;
   height: 39px;
+  right: 4px;
 }
 
 .icon-style {
@@ -228,7 +241,274 @@ a {
   height: 27px;
   color: #ff2727; 
 }
-    
+
+.button:hover {
+  background-color: rgb(162, 61, 61);
+}
+
+.article__about-school {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  margin-bottom: var(--padding-articles);
+}
+
+.grid-container-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-auto-rows: minmax(320px, auto);
+  gap: 20px;
+}
+
+.article__about-block {
+  background-color: rgba(241, 241, 241, 1);
+  border-radius: 70px;
+  min-height: 322px;
+  padding: 60px;
+}
+
+.article__about-title {
+  margin-top: 60px;
+  font-size: 34px;
+  line-height: var(--line-height);
+  position: relative;
+  font-weight: 800;
+}
+
+.article__about-title span {
+  font-family: var(--special-font);
+  color: var(--contrast-color-text);
+  font-weight: 400;
+  position: absolute;
+  left: 181px;
+  top: 72px;
+}
+
+.article__about-block h3{
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: var(--line-height);
+  font-weight: 600;
+}
+
+.article__about-block p {
+  line-height: var(--line-height);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--gray-color-text);
+}
+
+.article__prepositions {
+  position: relative;
+  padding: 100px 0 200px 0;
+}
+
+.article__prepositions::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 100vw;    
+  background-color: var(--background-color);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.article__prepositions-container {
+  max-width: 730px ;
+}
+
+.article__prepositions-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: var(--line-height);
+}
+
+.article__prepositions-paragpraph {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--gray-color-text);
+  line-height: var(--line-height);
+}
+
+.article__prepositions-case {
+  border-radius: 70px;
+  height: 300px;
+  overflow: hidden; 
+}
+
+.article__prepositions-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;
+}
+
+.article__prepositions-list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 100px 20px;
+
+}
+
+.article__prepositions-item h3 {
+  font-size: 25px;
+  line-height: 140%;
+  font-weight: 500;
+  margin: 40px 0 10px 40px;
+
+}
+
+.article__prepositions-item ul {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--gray-color-text);
+  margin-left: 72px;
+  margin-bottom: 20px;
+}
+
+.article__prepositions-item li {
+  list-style:disc;  
+}
+
+.article__prepositions-item .button {
+  margin-left:42px;
+}
+
+.article__subjects {
+  position: relative;
+  padding: 0 0 100px 0;
+}
+
+.article__subjects::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 100vw;    
+  background-color: var(--background-color);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.article__subjects-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: var(--line-height);
+  margin-bottom: 20px;
+}  
+
+.article__subjects p {
+  font-size: 20px;
+  color: var(--gray-color-text);
+  line-height: var(--line-height);
+}
+
+.article__subjects-subjects {
+  background-color: white;
+  padding: 48px 67px 33px 66px;
+  border-radius: 70px;
+  margin-top: 60px;
+}
+
+.article__subjects-list {
+  display: flex;
+  flex-direction: row;
+  gap: 73px;
+}
+
+.photo-case {
+  height: 100px;
+}
+
+.photo-flag {
+  min-width: 167.6px;
+  overflow: hidden;
+}
+
+.photo-subject {
+  max-width: 100px;
+  overflow: hidden;
+}
+
+.photo-case img {
+  width: 100%;              
+  height: 100%;             
+  object-fit: cover;        
+  display: block;           
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.card-label {
+  font-size: 22px;
+  line-height: var(--line-height);
+  font-weight: 500;
+}
+
+.article__comments {
+  padding-top: 100px;
+}
+
+.article__comments-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 95%;
+}
+
+.comment-list {
+  columns: 3;              /* или column-count: 3; */
+  column-gap: 20px;  
+  row-gap: 30px;      /* расстояние между колонками */
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.comment-list li {
+  padding: 13px 90px 17px 19px;
+  background-color: var(--background-color);
+  border-radius: 24px;
+  break-inside: avoid;     /* не рвать карточку между колонками */
+  display: block;          /* важно для корректного потока */
+  margin-bottom: 24px;     /* вертикальный зазор */
+  background: #f2f2f2;
+  position: relative;
+}
+
+.comment-header h3 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.comment-text {
+  color: var(--gray-color-text);
+}
+
+.comment-date {
+  position: absolute;
+  color: rgba(145, 145, 145, 1);
+  font-size: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  top: 13px;
+  right: 19px;
+}
+
+.comment-header {
+  margin-bottom: 10px;
+}
 
 
 /*# sourceMappingURL=main.css.map*/
