@@ -52,8 +52,13 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  color: black;
 }
 
 .header__links:hover {
   cursor: pointer;
+}
+
+.header-icon {
+  fill: black;
 }

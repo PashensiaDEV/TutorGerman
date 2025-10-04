@@ -1,4 +1,4 @@
-.article__header-dekstop {
+.article__dekstop {
   margin-top: 40px;
   position: relative;
   height: 537px;
@@ -9,7 +9,7 @@
   margin-bottom: var(--padding-articles);
 }
 
-.article__header-dekstop::after {
+.article__dekstop::after {
   content: '';
   background-color: rgba(116, 211, 0, 1);
   position: absolute;
@@ -84,6 +84,8 @@
   transition: var(--simple-anim);
   position: relative;
   color: var(--special-color-text);
+  flex: 0 0 auto;
+  width: fit-content;
 }
 
 .button .icon {
@@ -319,6 +321,7 @@
 
 .article__comments {
   padding-top: 100px;
+  margin-bottom: 5px;
 }
 
 .article__comments-title {
@@ -328,9 +331,9 @@
 }
 
 .comment-list {
-  columns: 3;              /* или column-count: 3; */
+  columns: 3;             
   column-gap: 20px;  
-  row-gap: 30px;      /* расстояние между колонками */
+  row-gap: 30px;     
   list-style: none;
   padding: 0;
   margin-top: 40px;
@@ -340,9 +343,9 @@
   padding: 13px 90px 17px 19px;
   background-color: var(--background-color);
   border-radius: 24px;
-  break-inside: avoid;     /* не рвать карточку между колонками */
-  display: block;          /* важно для корректного потока */
-  margin-bottom: 24px;     /* вертикальный зазор */
+  break-inside: avoid;    
+  display: block;         
+  margin-bottom: 24px;    
   background: #f2f2f2;
   position: relative;
 }
@@ -370,4 +373,53 @@
 
 .comment-header {
   margin-bottom: 10px;
+}
+
+.article__dekstop-footer {
+  position: relative;
+  height: 537px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 186px 715px 118px 125px;
+  margin-bottom: var(--padding-articles);
+}
+
+.article__dekstop-footer::after {
+  content: '';
+  background-color: var(--background-color);
+  position: absolute;
+  left: 0;
+  top: 66px;
+  right: 0;
+  bottom: 0;
+  border-radius: 70px;
+  z-index: -1;
+}
+
+.article__dekstop-footer-image {
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+}
+
+.article__dekstop-footer-title {
+  font-weight: 700;
+  line-height: 120%;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.article__dekstop-footer-paragraph {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: var(--line-height);
+  margin-bottom: 20px;
+}
+
+.article__footer-paragraphs {
+  max-width: 651px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
 }
