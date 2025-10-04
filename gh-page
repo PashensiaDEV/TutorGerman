@@ -1,0 +1,2 @@
+find dist -type f -size +95M -print
+
