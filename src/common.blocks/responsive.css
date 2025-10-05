@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+	/* стили для экранов до 768px */
+	.article__dekstop {
+		flex-direction: column;
+		margin: 0px;
+		background-color: rgba(116, 211, 0, 1);
+		border-radius: 20px;
+		padding: 60px 8px 0;
+		min-height: 693px;
+	}
+
+	.article__dekstop::after {
+		display: none;
+	}
+	.article__header-image {
+		height: 346px;
+		bottom: 0;
+		left: 29px;
+	}
+
+	.article__header-paragraph {
+		color: white;
+	}
+
+	.article__header-paragraphs {
+		grid-template-rows: 1fr min-content min-content;
+	}
+
+	.article__prepositions-case {
+		height: 235px;
+	}
+
+	.article__prepositions {
+		padding: 60px 8px 0;
+	}
+
+	.article__dekstop-footer::after {
+		display: none;
+	}
+
+	.comment-list {
+		columns: 1;
+	}
+}

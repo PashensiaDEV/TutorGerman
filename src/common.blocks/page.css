@@ -1,12 +1,8 @@
-
-
-
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: var(--main-font);
-  font-weight: 400; 
-  color: var(--main-color-text);
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: center; */
+	font-family: var(--main-font);
+	font-weight: 400;
+	color: var(--main-color-text);
 }
-

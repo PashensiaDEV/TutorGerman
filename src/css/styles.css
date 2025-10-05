@@ -4,6 +4,7 @@
 @import url('../common.blocks/header.css');
 @import url('../common.blocks/main.css');
 @import url('../common.blocks/footer.css');
+@import url('../common.blocks/responsive.css');
 
 /* variables */
 @import url('../common.blocks/variables.css');

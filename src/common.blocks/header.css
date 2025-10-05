@@ -1,64 +1,64 @@
 .header {
-  display: flex;
-  justify-content: space-between; /* лого влево, кнопки вправо */
-  align-items: center;
-  padding:  24px 0;
-  width: 100%;
+	display: flex;
+	justify-content: space-between; /* лого влево, кнопки вправо */
+	align-items: center;
+	padding: 24px 0;
+	width: 100%;
 }
 
 .header__title {
-  font-size: 50px;
-  justify-content: flex-start;
-  grid-column: 1;
-  line-height: 140%;
-  position: relative;
-  color: rgba(0, 0, 0, 1);
+	font-size: clamp(2.1875rem, 1.9485rem + 0.9804vw, 3.125rem);
+	justify-content: flex-start;
+	grid-column: 1;
+	line-height: 140%;
+	position: relative;
+	color: rgba(0, 0, 0, 1);
 }
 
 .header__title::after {
-  content: '';
-  background-image: url('../images/book.png');
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 50;
-  margin-left: 10px;
-  margin-top: 10px;
-  background-size: cover;     
-  background-repeat: no-repeat;
+	content: '';
+	background-image: url('../images/book.png');
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 50;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .header__actions {
-  grid-column: 3;
+	grid-column: 3;
 }
 
 .header__button {
-  padding:9.5px 18.5px;
-  border-radius: 12px;
-  font-size: 18px;
-  border: 0px;
-  background-color: rgba(255, 39, 39, 1);
-  font-weight: 500;
-  transition: var(--simple-anim);
-  color: var(--special-color-text);
+	padding: 9.5px 18.5px;
+	border-radius: 12px;
+	font-size: 18px;
+	border: 0px;
+	background-color: rgba(255, 39, 39, 1);
+	font-weight: 500;
+	transition: var(--simple-anim);
+	color: var(--special-color-text);
 }
 
 .header__button:hover {
-  background-color: rgb(162, 61, 61);
-  cursor: pointer;
+	background-color: rgb(162, 61, 61);
+	cursor: pointer;
 }
 
 .header__actions {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: black;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	color: black;
 }
 
 .header__links:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .header-icon {
-  fill: black;
+	fill: black;
 }
